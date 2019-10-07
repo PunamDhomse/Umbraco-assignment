@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "WebBase.cshtml";
+}
+
+@* the fun starts here *@
+
+<div id="fh5co-blog-section">
+    <div class="container">
+        @{ Html.RenderAction("RenderTitleControls", "SiteLayout");}
+        @{ Html.RenderAction("RenderPostList", "Blog", new { numberOfItems = 6 });}
+    </div>
+</div>
